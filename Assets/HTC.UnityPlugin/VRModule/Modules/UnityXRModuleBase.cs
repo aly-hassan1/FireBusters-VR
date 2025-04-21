@@ -317,7 +317,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             var activeSubsys = ListPool<XRInputSubsystem>.Get();
             try
             {
-                SubsystemManager.GetInstances(activeSubsys);
+                SubsystemManager.GetSubsystems(activeSubsys);
                 foreach (var subsys in activeSubsys)
                 {
                     if (!subsys.running) { continue; }
@@ -407,7 +407,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 var displaySystems = ListPool<XRDisplaySubsystem>.Get();
                 try
                 {
-                    SubsystemManager.GetInstances(displaySystems);
+                    SubsystemManager.GetSubsystems(displaySystems);
 
                     var minRefreshRate = float.MaxValue;
                     foreach (XRDisplaySubsystem system in displaySystems)

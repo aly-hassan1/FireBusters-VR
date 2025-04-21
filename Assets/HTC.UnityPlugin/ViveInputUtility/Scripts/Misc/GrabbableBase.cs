@@ -395,7 +395,7 @@ namespace HTC.UnityPlugin.Vive
 
             if (grabRigidbody != null)
             {
-                grabRigidbody.velocity = Vector3.zero;
+                grabRigidbody.linearVelocity = Vector3.zero;
                 grabRigidbody.angularVelocity = Vector3.zero;
             }
 
@@ -558,7 +558,7 @@ namespace HTC.UnityPlugin.Vive
 
             if (grabRigidbody != null)
             {
-                grabRigidbody.velocity = Vector3.zero;
+                grabRigidbody.linearVelocity = Vector3.zero;
                 grabRigidbody.angularVelocity = Vector3.zero;
             }
 

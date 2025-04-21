@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - EndPoint
-  - projectile
-  - FxTemporaire
-  - Grabbable
-  - Ground
-  - LockedLevel
-  - UnlockedLevel
-  - Hand
-  - Fire
-  - CarbonDioxide
-  - Water
-  - Powder
-  - Correct
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Restricted
+  - Player
+  - Grabbable
   - 
   - 
   - 

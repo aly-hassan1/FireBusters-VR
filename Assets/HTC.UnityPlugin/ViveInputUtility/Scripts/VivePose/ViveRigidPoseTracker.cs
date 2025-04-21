@@ -46,14 +46,14 @@ namespace HTC.UnityPlugin.Vive
             }
             else
             {
-                rigid.velocity = Vector3.zero;
+                rigid.linearVelocity = Vector3.zero;
                 rigid.angularVelocity = Vector3.zero;
             }
         }
 
         protected override void OnDisable()
         {
-            rigid.velocity = Vector3.zero;
+            rigid.linearVelocity = Vector3.zero;
             rigid.angularVelocity = Vector3.zero;
             base.OnDisable();
         }

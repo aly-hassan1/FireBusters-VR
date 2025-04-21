@@ -72,7 +72,7 @@ namespace HTC.UnityPlugin.Vive
             // Lock velocity
             if (m_rigidbody)
             {
-                m_rigidbody.velocity = Vector3.zero;
+                m_rigidbody.linearVelocity = Vector3.zero;
             }
         }
 

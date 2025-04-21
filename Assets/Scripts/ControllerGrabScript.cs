@@ -42,7 +42,7 @@ public class ControllerGrabScript : MonoBehaviour
             GetComponent<FixedJoint>().connectedBody = null;
             Destroy(GetComponent<FixedJoint>());
 
-            objectInHand.GetComponent<Rigidbody>().velocity = controllerPose.GetVelocity();
+            objectInHand.GetComponent<Rigidbody>().linearVelocity = controllerPose.GetVelocity();
             objectInHand.GetComponent<Rigidbody>().angularVelocity = controllerPose.GetAngularVelocity();
         }
         objectInHand = null;

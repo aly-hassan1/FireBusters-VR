@@ -160,11 +160,11 @@ namespace HTC.UnityPlugin.Utility
             var diffPos = to - from;
             if (Mathf.Approximately(diffPos.sqrMagnitude, 0f))
             {
-                rigidbody.velocity = Vector3.zero;
+                rigidbody.linearVelocity = Vector3.zero;
             }
             else
             {
-                rigidbody.velocity = diffPos / duration;
+                rigidbody.linearVelocity = diffPos / duration;
             }
         }
 
